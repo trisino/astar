@@ -12,7 +12,7 @@ function heuristics (a,b){
   return d;
 }
 
-var cols = 150;
+var cols = 190;
 var rows = 150;
 var grid = new Array(cols);
 var openSet = [];
@@ -83,7 +83,7 @@ function Spot(i, j) {
 }
 
 function setup() {
-    createCanvas(400,400);
+    createCanvas(1850,950);
     console.log("A*");
 
     w = width / cols;
