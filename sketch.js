@@ -52,15 +52,15 @@ function Spot(i, j) {
 
     // for (i = 0; i < grid.length; i++) {
     //         for (j = 0; j < grid[i].length; j++) {
-                for (var x = Math.max(0, i - 1); x <= Math.min(i + 1, grid.length); x++) {
-                    for (var y = Math.max(0, j - 1); y <= Math.min(j + 1, grid[i].length); y++) {
-                        if (x >= 0 && y >= 0 && x < grid.length && y < grid[i].length) {
-                            if(x!=i || y!=j){
-                              this.neighbors.push(grid[x][y]);
-                            }
-                        }
-                    }
+    for (var x = Math.max(0, i - 1); x <= Math.min(i + 1, grid.length); x++) {
+        for (var y = Math.max(0, j - 1); y <= Math.min(j + 1, grid[i].length); y++) {
+            if (x >= 0 && y >= 0 && x < grid.length && y < grid[i].length) {
+                if(x!=i || y!=j){
+                  this.neighbors.push(grid[x][y]);
                 }
+            }
+        }
+    }
                 // System.out.println("\n");
     //         }
     // }
